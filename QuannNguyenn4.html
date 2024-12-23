@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARINAA</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+    <body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('https://img.thuthuatphanmem.vn/uploads/2018/09/27/anh-nen-may-tinh-4k-dep_105908865.jpg');
+            background-size: cover; /* Hình ảnh bao phủ toàn màn hình */
+            background-position: center; /* Căn giữa hình ảnh */
+            background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+        }
+    </style>
+    <div class="container">
+        <div class="dropdown">
+            <div id="dropdown-btn">
+                <span class="dropdown-name">Cristiano Ronaldo</span>
+            </div>
+            <div class="dropdown-menu-box">
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="index.html" style="text-decoration: none; font-weight: bold; color: white;"><center>-Trang chủ- </li>
+                    <li class="dropdown-item"><a href="QuannNguyenn2.html" style="text-decoration: none; font-weight: bold; color: white;"><center>-Sự nghiệp-</li>
+                    <li class="dropdown-item"><a href="QuannNguyenn3.html" style="text-decoration: none; font-weight: bold; color: white;"><center>-Bàn thắng nổi bật-</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- js code -->
+<script>
+   let dropdown = document.querySelector('.dropdown');
+   let dropdownBtn = document.getElementById('dropdown-btn');
+   
+   dropdownBtn.addEventListener('click', () => {
+       dropdown.classList.toggle('dropdown-active');
+   });
+</script>
+</body>
+</html>
